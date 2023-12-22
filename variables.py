@@ -61,6 +61,9 @@ plt.xticks(rotation=90)
 plt.yticks(rotation=0)
 plt.tight_layout()
 
+# Save the figure
+plt.savefig("figures/mutual_information_matrix.png")
+
 # Calculate the correlation matrix
 correlation_matrix = df_clean.corr()
 
@@ -80,6 +83,9 @@ plt.ylabel("Column Names")
 plt.xticks(rotation=90)
 plt.yticks(rotation=0)
 plt.tight_layout()
+
+# Save the figure
+plt.savefig("figures/correlation_matrix.png")
 
 # Shannon entropy
 shannon_entropy = np.zeros(len(column_names))
@@ -101,6 +107,9 @@ plt.xticks(rotation=90)
 plt.yticks(rotation=0)
 plt.tight_layout()
 
-# Show the plot
+# Save the figure
+plt.savefig("figures/shannon_entropy.png")
+
+# Show the plots
 plt.show()
 
